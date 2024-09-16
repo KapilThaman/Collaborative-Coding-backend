@@ -7,7 +7,8 @@ const app = express();
 const server = createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: '*',
+    origin: "https://collaborative-coding-platform-three.vercel.app/", // Update this with your frontend URL
+    methods: ["GET", "POST"],
   },
 });
 
